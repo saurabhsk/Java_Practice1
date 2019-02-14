@@ -6,29 +6,29 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class ReverseStringTest {
-    ReverseString rev;
+public class Char_DetermineTest {
+    Char_Determine character;
 
     @Before
     public void setUp() throws Exception {
-        rev = new ReverseString();
+        character = new Char_Determine();
     }
 
     @After
     public void tearDown() throws Exception {
-        rev = null;
+        character = null;
     }
 
     @Test
-    public void revstr() {
-        String expected="nodnol";
-        String actual = rev.Revstr("london");
+    public void characterDet() {
+        boolean expected = true;
+        boolean actual = character.characterDet('A');
         assertEquals(expected,actual);
     }
     @Test
-    public void revstr1() {
-        String expected="hbaruas";
-        String actual = rev.Revstr("saurabh");
+    public void characterDet1() {
+        boolean expected = true;
+        boolean actual = character.characterDet('!');
         assertEquals(expected,actual);
     }
 }

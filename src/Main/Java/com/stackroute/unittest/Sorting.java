@@ -3,13 +3,13 @@ package com.stackroute.unittest;
 import java.util.Scanner;
 
 public class Sorting {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Number: ");
-        String n = sc.next();
-        //String num=n;
+    public  boolean sort(int n) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the Number: ");
+//        String n = sc.next();
+//        //String num=n;
         int temp = 0, sum = 0;
-        char[] arr = n.toCharArray();
+        char[] arr = ("" + n).toCharArray();
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++)
                 if (arr[i] > arr[j]) {
@@ -19,25 +19,26 @@ public class Sorting {
                 }
         }
         System.out.println(arr);
-        int numbers= Integer.parseInt(new String(arr));
-        while(numbers!=0){
-            int rem = numbers%10;
-            numbers=numbers/10;
-            if(rem%2==0) {
+        int numbers = Integer.parseInt(new String(arr));
+        int num1 = numbers;
+        while (numbers != 0) {
+            int rem = numbers % 10;
+            numbers = numbers / 10;
+            if (rem % 2 == 0) {
                 sum += rem;
             }
         }
         System.out.println(sum);
         if (sum > 15) {
             System.out.println("You are True.The Sum is greater than 15");
-        }
-        else{
+        } else {
             System.out.println("You are False.The sum is less than 15");
         }
-//
-        }
+
+        return true;
         //System.out.println(sum);
     }
+}
 
 
 

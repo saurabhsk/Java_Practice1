@@ -6,29 +6,29 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class ReverseStringTest {
-    ReverseString rev;
+public class OddorEvenTest {
 
+    OddorEven oddeven;
     @Before
     public void setUp() throws Exception {
-        rev = new ReverseString();
+        oddeven = new OddorEven();
     }
 
     @After
     public void tearDown() throws Exception {
-        rev = null;
+        oddeven=null;
     }
 
     @Test
-    public void revstr() {
-        String expected="nodnol";
-        String actual = rev.Revstr("london");
+    public void tomJerry() {
+        String expected = "Tom";
+        String actual = oddeven.tomJerry(23);
         assertEquals(expected,actual);
     }
     @Test
-    public void revstr1() {
-        String expected="hbaruas";
-        String actual = rev.Revstr("saurabh");
+    public void tomJerry1() {
+        String expected = "Jerry";
+        String actual = oddeven.tomJerry(26);
         assertEquals(expected,actual);
     }
 }

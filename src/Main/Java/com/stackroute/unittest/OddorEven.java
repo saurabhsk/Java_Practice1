@@ -3,20 +3,20 @@ package com.stackroute.unittest;
 import java.util.*;
 public class OddorEven {
 
-    public static void main(String[] args){
+    public String tomJerry(int num){
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number: ");
-        int num = sc.nextInt();
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the number: ");
+//        int num = sc.nextInt();
 
         if( num%2==0 && num>=20 && num<=30){
-            System.out.println("Jerry");
+            return ("Jerry");
         }
         else if(num%2!=0 && num>=20 && num<=30){
-            System.out.println("Tom");
+            return ("Tom");
         }
         else{
-            System.out.println("Invalid Input!! Please Enter number between 20 and 30");
+            return("Invalid Input!! Please Enter number between 20 and 30");
         }
     }
 }

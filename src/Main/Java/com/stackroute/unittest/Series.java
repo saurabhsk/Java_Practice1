@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Series {
 
-     public static void main(String[] args){
+     public boolean seriesPatt(int n){
 
-            Scanner sc = new Scanner(System.in);
-            System.out.println("Enter the nth Term: ");
-            int n = sc.nextInt();
+//            Scanner sc = new Scanner(System.in);
+//            System.out.println("Enter the nth Term: ");
+//            int n = sc.nextInt();
 
             for(int i=1;i<=n;i++){
                 for(int j=1;j<=i;j++){
@@ -16,7 +16,7 @@ public class Series {
                 }
                 //System.out.println();
             }
-
+              return true;
             }
 
         }

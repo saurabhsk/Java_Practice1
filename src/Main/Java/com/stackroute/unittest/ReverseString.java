@@ -12,6 +12,7 @@ public class ReverseString {
             char[]input =str.toCharArray();
             for(int i=input.length-1; i>=0;i--)
                 rev = rev+ input[i];
+             System.out.println(rev);
               return rev;
         }
 
